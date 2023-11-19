@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
 
     <!-- External JS -->
@@ -31,6 +32,8 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
   </head>
 
   <body>
@@ -39,7 +42,7 @@
       <div class="nav-action">
         <button id="compose">
           <span><b>Write</b> a new tweet</span>
-          <i class="fa-solid fa-angles-down fa-beat" style="color: #ff1400;"></i>
+          <i class="fa-solid fa-angles-down fa-beat" style="color: #f9511a;"></i>
         </button>
       </div>
     </nav>
@@ -55,6 +58,17 @@
   </header>
 
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <section id="compose-tweet">
+        <form id="tweeter-form">
+          <label for="tweeter-text">What are you humming about?</label>
+          <textarea name="text" id="tweeter-text"></textarea>
+          <div class="tweeter-counter">
+            <button id="tweeter-button" type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweeter-text">140</output>
+          </div>
+          <div id="validate-warning"></div>
+        </form>
+    </main>
   </body>
 </html>

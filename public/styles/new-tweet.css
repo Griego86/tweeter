@@ -1,0 +1,37 @@
+#tweeter-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-weight: 600;
+}
+
+#tweeter-text {
+  background: none;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  font-size: 1em;
+  height: 50px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  font-weight: 550;
+}
+
+.tweeter-counter {
+  font-family: Bungee, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top-style: solid;
+  border-top-color:#525049;
+  border-top-width: 4px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.validator {
+  color: white;
+  background-color: rgb(188, 22, 16);
+  padding: 10px;
+}

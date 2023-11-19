@@ -24,3 +24,45 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ main {
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#tweeter-button {
+  background-color: #4056A1;
+  color:#f4f1ec;
+  padding: 5px;
+  border: none;
+}
+
+#tweeter-button:hover {
+  box-shadow: 0px 0px 0px 3px rgba(3, 102, 214, 0.3);
+}
+
+section {
+  font-family: "Source Sans 3", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#scroll-button {
+  border: none;
+  border-radius: 50%;
+  width: 52px;
+  right: 30px;
+  position: fixed;
+  padding: 10px; 
+  bottom: 20px;
+  background-color: red;
+  cursor: pointer;
+}
