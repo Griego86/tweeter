@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#tweet-text").on("input", function() {
+  $("#tweeter-text").on("input", function() {
     const $input = $(this);
     const $text = $input.val();
     const remainingChar = 140 - $text.length;
