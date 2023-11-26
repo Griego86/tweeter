@@ -1,4 +1,4 @@
-/* CSS for mobile views and above */
+/*Mobile view*/
 #tweet-form {
   display: flex;
   flex-direction: column;
@@ -46,7 +46,7 @@
   background-color: rgb(198, 15, 9);
 }
 
-/* CSS rules that target Desktop screens (min width 1024px) */
+/* CSS for desktop and above */
 @media only screen and (min-width: 1024px) {
   .container {
     margin-top: none;
