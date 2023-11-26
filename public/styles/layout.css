@@ -6,38 +6,38 @@
  html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
-
+/* global layout */
 body {
   color: #545149;
-  background-color: rgb(234, 214, 182);
-  font-size: 24px;
+  background-color: rgb(221, 208, 189);
   font-family: "Source Sans 3", sans-serif;
+  font-size: 24px;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 main {
-  background-color: inherit;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-left: 5%;
-  margin-right: 5%;
+  align-items: none;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  width: 90%;
 }
 
 #tweet-button {
   background-color: #4056A1;
-  color:#f4f1ec;
-  padding: 5px;
+  color: #FFFFFF;
+  padding: 0.25em;
   border: none;
 }
 
@@ -46,22 +46,41 @@ main {
 }
 
 section {
-  font-family: "Source Sans 3", sans-serif;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: none;
   width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 0.5em;
+  gap: 1.5em;
 }
 
 #scroll-button {
+  background-color: red;
+  position: fixed;
   border: none;
   border-radius: 50%;
   width: 52px;
+  padding: 0.5em;
   right: 30px;
-  position: fixed;
-  padding: 10px; 
   bottom: 20px;
-  background-color: red;
   cursor: pointer;
+}
+
+/* CSS for desktop and above */
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 5em;
+  }
+  main {
+    margin: 0 auto;
+    overflow-y: auto;
+    scroll-snap-type: start;
+    scroll-behavior: smooth;
+    width: 66.7%;
+  }
 }

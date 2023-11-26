@@ -1,3 +1,4 @@
+/* CSS for mobile views and above */
 #tweet-form {
   display: flex;
   flex-direction: column;
@@ -6,32 +7,52 @@
 }
 
 #tweet-text {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: none;
+  padding-right: none;
+  color: #232220;
   background: none;
   border: none;
   outline: none;
   resize: none;
-  overflow: hidden;
   font-size: 0.8em;
   height: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   font-weight: 600;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 .tweet-counter {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: none;
+  padding-right: none;
+  border-top-color: #232220;
   font-family: Bungee, sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border-top-style: solid;
-  border-top-color:#545149;
   border-top-width: 4px;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .validator {
-  color: white;
-  background-color: rgb(225, 17, 10);
-  padding: 10px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  padding-right: none;
+  color: #05010115;
+  background-color: rgb(198, 15, 9);
+}
+
+/* CSS rules that target Desktop screens (min width 1024px) */
+@media only screen and (min-width: 1024px) {
+  .container {
+    margin-top: none;
+    margin-bottom: 1.5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-top: 130px;
+  }
 }

@@ -3,7 +3,7 @@ $(document).ready(function() {
     const $input = $(this);
     const $text = $input.val();
     const remainingChar = 140 - $text.length;
-    const $counterElem = $input.parent().find(".counter"); // Changed to ".counter" here
+    const $counterElem = $input.parent().find(".counter");
     $counterElem.text(remainingChar);
     $counterElem.css("color", "#545149");
     

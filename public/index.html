@@ -3,6 +3,7 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
@@ -17,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+3:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
 
-    <!-- font-awesome library -->
+    <!-- Font Awesome library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- timeago library -->
@@ -55,14 +56,12 @@
       <div class="header-img">
           <img src="/images/profile-hex.png"> 
       </div>
-      <br>
       <h1 class="main-header-username">
         <span class="username-first-bold">Dimitrios</span> Athanasopoulos
       </h1>
-  </header>
+    </header>
 
-  
-  <!-- Page-specific (main) content here -->
+    <!-- Page-specific (main) content here -->
     <main class="container">
       <section id="compose-tweet">
         <form id="tweet-form">
@@ -75,7 +74,9 @@
           <div id="validate-warning"></div>
         </form>
       </section>
-      <section id="tweets-container" class="container"></section>
+      
+      <!-- This section contains individual tweets -->
+      <section id="tweets-container"></section>
     </main>
     <button id="scroll-button"><i class="fa-solid fa-angles-up fa-beat-fade" style="color: #ffff;"></i></button>
   </body>

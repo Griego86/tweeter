@@ -1,15 +1,13 @@
 $(document).ready(function() {
-  // Hide compose-tweet section by default
   $("#compose-tweet").hide();
   
   $("#compose").on("click", function(event) {
     event.preventDefault;
     
-    $("#compose-tweet").toggle("fast"); // show or hide compose-tweet section
-    $("#tweet-text").focus(); // Enable the textarea automatically
+    $("#compose-tweet").toggle("fast"); 
+    $("#tweet-text").focus();
   });
   
-  // Scroll button is hidden only when the vertical scroll position is 0
   $("#scroll-button").hide();
   $(window).on("scroll", function(event) {
     event.preventDefault;
@@ -21,7 +19,6 @@ $(document).ready(function() {
     $("#scroll-button").show();
   });
 
-  // Scroll to top button function
   $("#scroll-button").on("click", function(event) {
     event.preventDefault;
     $("html, body").animate({ scrollTop: 0 }, "slow");
